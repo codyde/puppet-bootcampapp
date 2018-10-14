@@ -67,5 +67,10 @@ plan profiles::bootcampapp (
 	require => Exec['ng build --prod']
         }
 
+   exec { 'restart nginx':
+       command => '/bin/systemctl restart nginx',
+       require => File['/usr/share/nginx/html']
+        }  
+
 }
 }
