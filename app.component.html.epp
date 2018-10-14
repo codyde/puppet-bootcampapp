@@ -1,0 +1,57 @@
+<div class="main-container">
+    <header class="header-6">
+        <div class="branding">
+            <a href="..." class="nav-link">
+                <clr-icon shape="vm"></clr-icon>
+                <span class="title">CMBU Demo</span>
+            </a>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="content-area">
+            <div style="text-align:center">
+                <h1>
+                    Welcome to Cloud Automation Services Puppet Demonstration!
+                </h1>
+                <div>
+                    <img class="logo" width="50%" alt="CAS Builder Turtle" src="../assets/casbuilderturtle.png">
+                </div>
+                <div class="hiddenicons">
+                    <div class=row>
+                    <img class="logo" width="50" alt="vRA Logo" src="../assets/ca.svg">
+                    <img class="logo" width="50" alt="vRA Logo" src="../assets/sb.svg">
+                    <img class="logo" width="50" alt="vRA Logo" src="../assets/cs.svg">
+                    </div>
+                </div>
+		<h1>
+		    #NoMoreWordpressDemos 
+		</h1>
+            </div>
+            <div>   
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Hostname</th>
+                        <th>Operating System</th>
+                        <th>IP Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%= $hostname %></td>
+                        <td><%= $operatingsystem %></td>
+                        <td><%= $networking[ip] %></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <nav class="sidenav">
+            <section class="sidenav-content">
+                <img class="logo" width="100" alt="vRA Logo" src="../assets/ca.svg">
+                <img class="logo" width="100" alt="vRA Logo" src="../assets/sb.svg">
+                <img class="logo" width="100" alt="vRA Logo" src="../assets/cs.svg">
+            </section>
+        </nav>
+    </div>
+</div>
