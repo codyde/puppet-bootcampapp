@@ -1,15 +1,6 @@
-plan profiles::bootcampapp (
-	TargetSpec $nodes
-) {
-
-   $nodes.apply_prep
-
-   apply($nodes) {
-       $html_dir = '/var/www/html'
-
-       Package {'nginx':
+   Package {'nginx':
          ensure => present,
-       }
+   }
 
    exec { 'git clone':
      command => '/usr/bin/git clone -b standalone-p https://github.com/codyde/cmbu-bootcamp-app /tmp/cmbu-bootcamp-app'
@@ -71,6 +62,3 @@ plan profiles::bootcampapp (
        command => '/bin/systemctl restart nginx',
        require => File['/usr/share/nginx/html']
         }  
-
-}
-}
